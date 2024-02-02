@@ -1,0 +1,85 @@
+/*style.css*/
+header{
+	color: white; /* цвет текста*/
+	background-color: blue; /*цвет фона*/
+	font-family: Arial; /*тип шрифта*/
+	letter-spacing: 0.1cm; /*растояние между букв*/
+	text-align: center; /*местоположение заглавия*/	
+}
+footer{
+	position: fixed;
+	bottom: 0;
+	color: gold;
+	background-color: black;
+	width: 100%;
+	text-align: center;
+
+}
+main section{
+	border-left: 6pt solid black; /*dotted dashed */
+    border-right: 6pt solid black;
+	border-radius: 60px;
+	padding: 2%;
+	width: 30%;
+}
+/*h2 mis on section sees*/
+main section h2{
+	color: white; /* цвет текста*/
+	background-color: black; /*цвет фона*/
+	font-family: Arial; /*тип шрифта*/
+	letter-spacing: 0.1cm; /*растояние между букв*/
+	text-align: center; /*местоположение заглавия*/		
+}
+/*navigeerimismenüü w3shools lehelt*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+img{
+	border-radius: 50%; 
+	border: 2px solid black;
+	
+	
+	
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
