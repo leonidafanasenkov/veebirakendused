@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Õpilase ANKEET</title>
+    <link rel="stylesheet" type="text/css" href="anketStyle.css">
+    <script src="nimiLugemine.js"></script>
+</head>
+<body>
+<h1>Õpilase Ankeet</h1>
+<form>
+    <table border="1">
+    <!--tekstkast-->
+        <tr>
+            <td>
+    <label for="nimi">Sisesta nimi:</label>
+            </td>
+            <td>
+    <input type="text" id="nimi" name="nimi" placeholder="Eesnimi" oninput="sisestaNimi()">
+    <div id="vastus"></div>
+            </td>
+    <!--checkbox-->
+        <tr>
+            <td>
+    <strong>Vali tehtud kursused:</strong>
+            </td>
+        <td>
+    <br>
+    <input type="checkbox" id="kurs1" value="1.kursus">
+    <label for="kurs1">1.kursus</label>
+    <br>
+    <input type="checkbox" id="kurs2" value="2.kursus">
+    <label for="kurs2">2.kursus</label>
+    <br>
+    <input type="checkbox" id="kurs3" value="3.kursus">
+    <label for="kurs3">3.kursus</label>
+    <br>
+        </td>
+    <!--radionupp-->
+        <tr>
+            <td>
+    <strong>Vali Eriala</strong>
+            </td>
+    <!--id kogu aeg erinevad, aga name radionupus on üks-->
+            <td>
+    <input type="radio" id="it" value="IT" name="eriala">
+    <label for="it">Infotehnoloogia</label>
+    <br>
+    <input type="radio" id="juuksur" value="juuksur" name="eriala">
+    <label for="juuksur">Juuksur</label>
+    <br>
+    <input type="radio" id="meh" value="Meh" name="eriala">
+    <label for="meh">Mehhatroonika</label>
+    <br>
+    <input type="radio" id="ratsep" value="Rätsep" name="eriala">
+    <label for="ratsep">Rätsep</label>
+    <br>
+            </td>
+    <!--suur tekstkast-->
+       </tr> <tr>
+            <td>
+                <strong>Kirjuta ennast:</strong> </td>
+        <td>
+    <textarea id="kiri">
+oodetakse 100 sõnu
+    </textarea>
+        </td>
+        </tr>
+    <br>
+    <!--ripploend - выпадающий список-->
+        <tr>
+            <td>
+    <label for="linn">Elukoht:</label> </td>
+            <td>
+    <select name="linn" id="linn">
+        <option value="vali">Palun vali linn.....</option>
+        <option value="Tallinn">Tallinn</option>
+        <option value="Tartu">Tartu</option>
+        <option value="Narva">Narva</option>
+        <option value="Paide">Paide</option>
+        <option value="Keila">Keila</option>
+    </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="varv">What is your favorite color?:</label>
+            </td>
+            <td><input type="color" id="varv"></td>
+
+        </tr>
+    <br>
+    <br>
+        <tr>
+            <td>
+    <input type="number" placeholder="What are you on the list?">
+            </td>
+        </tr>
+    <br>
+    <br>
+        <tr>
+            <td>
+                <label for="slider">How do you rate yourself by the slider? 50/100:</label> </td>
+            <td>
+        <input type="range" id="slider"> </td>
+        </tr>
+    <tr>
+        <td>
+            <label for="nimi">When were you born?:</label>
+        </td>
+        <td>
+            <input type="date">
+        </td>
+    </tr>
+        <tr>
+            <td>
+                <label for="nimi">What time were you born?:</label>
+            </td>
+            <td>
+                <input type="time">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="email" placeholder="What is your email address?">
+            </td>
+            <td>
+
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
