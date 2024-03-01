@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Õpilase ANKEET</title>
+    <link rel="stylesheet" type="text/css" href="ankeetStyle.css">
+    <script src="nimiLugemine.js"></script>
+</head>
+<body>
+<h1>Õpilase Ankeet</h1>
+<form>
+    <table border="1">
+        <!--tekstkast-->
+        <label for="nimi">Sisesta nimi:</label>
+        <input type="text" id="nimi" name="nimi" placeholder="Eesnimi" oninput="tekstKast()">
+        <div id="otvet"></div>
+        <br>
+        <!--checkbox-->
+        <strong>Vali tehtud kursused:</strong>
+        <br>
+        <input type="checkbox" id="kurs1" value="1.kursus">
+        <label for="kurs1">1.kursus</label>
+        <br>
+        <input type="checkbox" id="kurs2" value="2.kursus">
+        <label for="kurs2">2.kursus</label>
+        <br>
+        <input type="checkbox" id="kurs3" value="3.kursus">
+        <label for="kurs3">3.kursus</label>
+        <br>
+        <!--radionupp-->
+        <strong>Vali Eriala</strong>
+        <br>
+        <!--id kogu aeg erinevad, aga name radionupus on üks-->
+        <input type="radio" id="it" value="IT" name="eriala">
+        <label for="it">Infotehnoloogia</label>
+        <br>
+        <input type="radio" id="juuksur" value="juuksur" name="eriala">
+        <label for="juuksur">Juuksur</label>
+        <br>
+        <input type="radio" id="meh" value="Meh" name="eriala">
+        <label for="meh">Mehhatroonika</label>
+        <br>
+        <input type="radio" id="ratsep" value="Rätsep" name="eriala">
+        <label for="ratsep">Rätsep</label>
+        <br>
+        <!--suur tekstkast-->
+        <strong>Kirjuta ennast:</strong>
+        <br>
+        <textarea id="kiri">
+oodetakse 100 sõnu
+    </textarea>
+        <br>
+        <!--ripploend - выпадающий список-->
+        <label for="linn">Elukoht:</label>
+        <select name="linn" id="linn">
+            <option value="vali">Palun vali linn.....</option>
+            <option value="Tallinn">Tallinn</option>
+            <option value="Tartu">Tartu</option>
+            <option value="Narva">Narva</option>
+            <option value="Paide">Paide</option>
+            <option value="Keila">Keila</option>
+        </select>
+        <br>
+        <br>
+        <input type="number" placeholder="What are you on the list?">
+        <br>
+        <br>
+        <label for="nimi">How do you rate yourself by the slider? 50/100:</label>
+        <input type="range">
+        <br>
+        <br>
+        <label for="nimi">What is your favorite color?:</label>
+        <input type="color">
+        <br>
+        <br>
+        <label for="nimi">When were you born?:</label>
+        <input type="date">
+        <br>
+        <br>
+        <label for="nimi">What time were you born?:</label>
+        <input type="time">
+        <br>
+        <br>
+        <input type="email" placeholder="What is your email address?">
+        <br>
+        <div id="vastus"></div>
+        <br>
+        <fieldset>
+            <legend>Vali sugu:</legend>
+            <input type="radio" id="mees" name="sugu" onchange="radioValik()">
+            <label for="mees">mees</label>
+            <br>
+            <input type="radio" id="naine" name="sugu" onchange="radioValik()">
+            <label for="naine">naine</label>
+            <div id="vastus2"></div>
+            <img src="" id="pilt">
+        </fieldset>
+        <br>
+        <label for="linn">Kust pärit sa oled?</label>
+        <select id="linn" onchange="selectValik()">
+            <option>Vali...</option>
+            <option value="Tallinn">Tallinn</option>
+            <option value="Tartu">Tartu</option>
+            <option value="Pärnu">Pärnu</option>
+            <option value="Tapa">Maardu</option>
+            <option value="Maardu">Maardu</option>
+        </select>
+        <div id="vastus3"></div>
+        <br>
+        <strong>Vali oma lemmikmuusika:</strong>
+        <br>
+        <input type="checkbox" id="jazz" value="jazz" onchange="checkboxValik()">
+        <label for="jazz">jazz</label>
+        <br>
+        <input type="checkbox" id="popp" value="popp" onchange="checkboxValik()">
+        <label for="popp">popp</label>
+        <br>
+        <input type="checkbox" id="metal" value="metal" onchange="checkboxValik()">
+        <label for="metal">metal</label>
+        <br>
+        <input type="checkbox" id="rock" value="rock" onchange="checkboxValik()">
+        <label for="rock">rock</label>
+        <br>
+        <input type="checkbox" id="tehnotrans" value="tehnotrans" onchange="checkboxValik()">
+        <label for="tehnotrans">tehnotrans</label>
+        <br>
+        <input type="checkbox" id="rep" value="rep" onchange="checkboxValik()">
+        <label for="rep">rep</label>
+        <br>
+        <div id="vastus4"></div>
+        <input type="reset" value="Puhasta" onclick="puhasta()">
+    </table>
+</form>
+</body>
+</html>
